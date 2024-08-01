@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jokeverse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="site-title">Jokeverse</h1>
+    <nav class="menu">
+      <ul class="item">
+        <li class="link" id="categoryLabel" onclick="toggleDropdown()">Select Category</li>
+        <ul class="submenu" id="dropdownMenu">
+          <li class="submenu-item"><a href="#" class="submenu-link" onclick="getJoke('Programming')">Programming</a></li>
+          <li class="submenu-item"><a href="#" class="submenu-link" onclick="getJoke('Miscellaneous')">Miscellaneous</a></li>
+          <li class="submenu-item"><a href="#" class="submenu-link" onclick="getJoke('Dark')">Dark</a></li>
+          <li class="submenu-item"><a href="#" class="submenu-link" onclick="getJoke('Pun')">Pun</a></li>
+          <li class="submenu-item"><a href="#" class="submenu-link" onclick="getJoke('Spooky')">Spooky</a></li>
+          <li class="submenu-item"><a href="#" class="submenu-link" onclick="getJoke('Christmas')">Christmas</a></li>
+        </ul>
+      </ul>
+    </nav>
+    <div class="card" id="jokeCard">
+      <div class="card-content">
+        <p class="card-para" id="jokeText">Select a category to generate a joke.</p>
+      </div>
+    </div>
+    <button onclick="copyJoke()">Copy Joke</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
